@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Recognition</string>
+    <string name="selectPhoto">выбрать фото</string>
+    <string name="makePhoto">сделать фото</string>
+    <string name="checkPhoto">фото загружено</string>
+    <string name="printText">показать блоки</string>
+    <string name="imageView">Нажмите 2 раза по блоку, чтобы выбрать продукт, количество или цену</string>
+    <string name="addItem">добавить пункт</string>
+    <string name="further">далее</string>
+    <string name="desc">Image</string>
+    <string name="name">Название</string>
+    <string name="quantity">Количество</string>
+    <string name="nextBlock">следующий пункт</string>
+    <string name="cost">Цена</string>
+</resources>

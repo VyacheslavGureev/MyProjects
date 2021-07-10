@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<meta charset="utf-8">
+    <title>Toxic filter</title>
+</head>
+	    <form method="post">
+	        <input type="text" name="TEXT">
+	        <input type="submit" value="Получить результат">
+			<output type="text" name="RESULT">
+	    </form>
+	<br>{{ status }}<br>
+	Message:<br>
+	{{ msg }}<br>
+	Result:<br>
+	{{ toxic_flag }}<br><br>
+	/post (URL для POST запроса)<br>
+	принимает POST-запрос в JSON формате (ключ и значение - String) пример:<br>
+	{'message' : 'ваше сообщение'}<br>
+	отвечает в JSON формате (ключ - String, значение - Bool) пример:<br>
+	{'toxic_status': true}<br>
+</body>
+</html>
+
