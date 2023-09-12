@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Cloud_Shadow"
+    tools:context=".MainActivity">
+
+    <org.osmdroid.views.MapView
+        android:id="@+id/mapview"
+        android:layout_width="371dp"
+        android:layout_height="418dp"
+        android:layout_marginBottom="42dp"
+        app:layout_constraintBottom_toTopOf="@+id/info_ab_order"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/toppanel"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginBottom="40dp"
+        android:background="@color/Rock"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/mapview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/exit_button"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/exit_icon"
+            android:contentDescription="@string/app_name"
+            android:gravity="center_vertical"
+            app:backgroundTint="@null" />
+
+        <TextView
+            android:id="@+id/info_about_orders"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="115dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical"
+            android:text="ЗАКАЗЫ"
+            android:textColor="@color/Cloud_Shadow"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/settings_button"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="86dp"
+            android:background="@drawable/settings_icon"
+            android:contentDescription="@string/app_name"
+            android:gravity="center_vertical"
+            app:backgroundTint="@null" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/info_ab_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:id="@+id/num_of_order"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="3dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/num_of_order_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:text="Номер заказа:"
+                android:textColor="@color/Rock"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/tV_for_parse_numoforder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Не определен"
+                android:textColor="@color/Rock"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/deliver_info"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="3dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/username_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:text="Курьер:"
+                android:textColor="@color/Rock"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/tV_for_parse_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Не определен"
+                android:textColor="@color/Rock"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/weight_of_order_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="3dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/weight_of_order_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:text="Вес заказа:"
+                android:textColor="@color/Rock"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/tV_for_parse_weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Не определен"
+                android:textColor="@color/Rock"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/profit_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="3dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/profit_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:text="Прибыль:"
+                android:textColor="@color/Rock"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/tv_for_parse_profit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Не определена"
+                android:textColor="@color/Rock"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/first_course_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="3dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/first_course_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:text="Первые блюда:"
+                android:textColor="@color/Rock"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/tV_for_parse_first_course"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Отсутствуют"
+                android:textColor="@color/Rock"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/second_course_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="3dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/second_course_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:text="Вторые блюда:"
+                android:textColor="@color/Rock"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/tV_for_parse_second_course"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Отсутствуют"
+                android:textColor="@color/Rock"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/dessert_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="3dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/dessert_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:text="Десерты:"
+                android:textColor="@color/Rock"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/tV_for_parse_dessert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Отсутствуют"
+                android:textColor="@color/Rock"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/drinks_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="3dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/drinks_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:text="Напитки:"
+                android:textColor="@color/Rock"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/tV_for_parse_drinks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Отсутствуют"
+                android:textColor="@color/Rock"
+                android:textSize="16dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

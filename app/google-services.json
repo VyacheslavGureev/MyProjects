@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "105819735203",
+    "firebase_url": "https://recognitionmodule.firebaseio.com",
+    "project_id": "recognitionmodule",
+    "storage_bucket": "recognitionmodule.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:105819735203:android:ec14277d6319b406a12b16",
+        "android_client_info": {
+          "package_name": "com.example.recognition"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "105819735203-4ed5n2tjutkmj44gds50pcf8tdtrdlos.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAmFHh4iczpk1OVxppYu7j35F_9TCHfjGE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "105819735203-4ed5n2tjutkmj44gds50pcf8tdtrdlos.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

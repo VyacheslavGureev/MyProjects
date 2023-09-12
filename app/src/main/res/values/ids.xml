@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="etUserName" type="id">@+id/etUserName</item>
+    <item name="etEmailAddress" type="id">@+id/etEmailAddress</item>
+    <item name="etPhone" type="id">@+id/etPhone</item>
+    <item name="etPass" type="id">@+id/etPass</item>
+    <item name="etConfirmPass" type="id">@+id/etConfirmPass</item>
+    <item name="acc_already_exists_but" type="id">@+id/acc_already_exists_but</item>
+    <item name="reg_button" type="id">@+id/reg_button</item>
+    <item name="ili_text" type="id">@+id/ili_text</item>
+    <item name="sources_for_reg" type="id">@+id/sources_for_reg</item>
+    <item name="google_reg_but" type="id">@+id/google_reg_but</item>
+    <item name="yandex_reg_but" type="id">@+id/yandex_reg_but</item>
+    <item name="vk_reg_but" type="id">@+id/vk_reg_but</item>
+    <item name="imageView2" type="id">@+id/imageView2</item>
+</resources>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgr_for_login_activity"
+    tools:context=".SignInActivity">
+
+
+    <Button
+        android:id="@+id/Login_but"
+        android:layout_width="170dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#BA5536"
+        android:text="Войти"
+        android:textSize="16dp"
+        android:textAlignment="center"
+        android:textColor="#843820"
+        app:layout_constraintBottom_toTopOf="@+id/or_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:backgroundTint="@color/white"
+        android:ems="13"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textSize="16dp"
+        android:hint="Имя пользователя"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/editTextPass"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="68dp"
+        android:backgroundTint="@color/white"
+        android:ems="13"
+        android:hint="Пароль"
+        android:textSize="16dp"
+        android:textColorHint="@color/white"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/Login_but"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/or_text"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_marginBottom="16dp"
+        android:text="ИЛИ"
+        android:textAlignment="center"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/login_methods_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/login_methods_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/google_login_but"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/icon_google"
+            android:contentDescription="@string/app_name"
+            app:backgroundTint="@null" />
+
+        <Button
+            android:id="@+id/yandex_login_but"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/icon_yandex"
+            android:contentDescription="@string/app_name"
+            app:backgroundTint="@null" />
+
+        <Button
+            android:id="@+id/vk_login_but"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/icon_vk"
+            android:contentDescription="@string/app_name"
+            app:backgroundTint="@null"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/registr_but"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="8dp"
+        android:text="Нет аккаунта? Зарегистрируйтесь"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/Login_but"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
